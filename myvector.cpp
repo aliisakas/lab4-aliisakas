@@ -23,7 +23,7 @@ MyVector& MyVector::operator=(const MyVector& other) {
         data = new int[size];
         std::copy(other.data, other.data + size, data);
     }
-    return *this
+    return *this;
 }
 
 

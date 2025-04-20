@@ -9,10 +9,12 @@
 #include "T.hpp"
 #include "myarray.hpp"
 
-int main {
+int main() {
+
+    using namespace std::chrono;
 
     // 1) Move семантика
-    MyVector vector1(1000000);
+    MyVector vec1(1000000);
 
     auto startCopy = high_resolution_clock::now();
     MyVector vec2 = vec1;
@@ -38,22 +40,22 @@ int main {
 
 
     // 2.2) Шаблоны функций, Контейнер в строку
-    std::vector<int> vec1 = {1, 2, 3};
+    std::vector<int> vector1 = {1, 2, 3};
     std::list<std::string> list1 = {"a", "b", "c"};
     std::set<double> set1 = {1.5, 2.1, 3.5};
 
-    std::cout << container_to_string(vec1) << std::endl;
+    std::cout << container_to_string(vector1) << std::endl;
     std::cout << container_to_string(list1) << std::endl;
     std::cout << container_to_string(set1) << std::endl;
 
 
     // 3) Шаблоны классов, MyArray
     MyArray<int, 5> arr1;
-    for (int i = 0; i < arr.size(); ++i)
-        arr[i] = i * 5;
+    for (int i = 0; i < arr1.size(); ++i)
+        arr1[i] = i * 5;
 
-    for (int i = 0; i < arr.size(); ++i)
-        std::cout << arr[i] << " ";
+    for (int i = 0; i < arr1.size(); ++i)
+        std::cout << arr1[i] << " ";
     std::cout << std::endl;
 
     MyArray<std::string, 3> arr2;

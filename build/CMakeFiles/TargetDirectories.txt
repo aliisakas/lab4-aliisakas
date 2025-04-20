@@ -1,0 +1,3 @@
+C:/Users/Алиса/source/repos/lab4-aliisakas/build/CMakeFiles/Lab4.dir
+C:/Users/Алиса/source/repos/lab4-aliisakas/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Алиса/source/repos/lab4-aliisakas/build/CMakeFiles/ZERO_CHECK.dir
